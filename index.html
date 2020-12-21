@@ -4,81 +4,111 @@
 <head>
   <meta name="description" content="Game Hub - buy and sell used games, or buy new">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://use.fontawesome.com/3e1948f670.js"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
   <title>Game Hub | Home</title>
 </head>
 
 <body>
   <header>
-    <a href="index.html">
-      <img src="images/GameHub_logo.png" alt="Game Hub Logo">
-    </a>
-    <nav>
-      <img src="#" alt="shopping cart">
-      <a href="profile.html">Profile</a>
-    </nav>
-    <section>
-      <img src="#" alt="All categories">
-      <p>All categories</p>
-      <p>Action</p>
-      <p>Strategy</p>
-      <p>RPG</p>
-      <p>Puzzle</p>
+    <section class="top-header">
+      <div class="header-logo">
+        <img src="images/GameHub_logo.png" alt="Game Hub Logo">
+      </div>
+      <div class="header-content">
+        <div>
+          <a href="#"><i class="fa fa-shopping-cart fa-2x"></i></a>
+        </div>
+        <div>
+          <a href="#">Sign up</a>
+        </div>
+        <div>
+          <a href="#">Log in</a>
+        </div>
+      </div>
     </section>
+    <nav>
+      <ul>
+        <li>All products</li>
+        <li>Used games</li>
+        <li>New Games</li>
+        <li>Sell games</li>
+        <li>News</li>
+      </ul>
+    </nav>
   </header>
   <main>
-    <a href="#">Search</a>
-    <img src="#" alt="search button">
-    <section>
-      <h1>New releases</h1>
-      <div>
-        <img src="#" alt="Rocket League">
-        <p>399,-</p>
-        <p>add to cart</p>
-      </div>
-      <div>
-        <img src="#" alt="Resident evil 4">
-        <p>349,-</p>
-        <p>add to cart</p>
-      </div>
-      <div>
-        <img src="#" alt="Minecraft">
-        <p>149,-</p>
-        <p>add to cart</p>
-      </div>
-      <div>
-        <img src="#" alt="Grand theft auto">
-        <p>449,-</p>
-        <p>add to cart</p>
-      </div>
+    <div class="search">
+      <input type="text" name="search-bar" placeholder="Search" class="search-bar">
+      <a href="#" class="search-icon"><i class="fa fa-search fa-2x"></i></a>
+    </div>
     </section>
-    <section>
-      <h2>News</h2>
-      <img src="#" alt="Minecraft new patch">
-      <img src="#" alt="Article the best console">
-    </section>
-    <section>
-      <h1>Buy used games</h1>
-      <div>
-        <img src="#" alt="Just dance">
-        <p>70,-</p>
-        <p>add to cart</p>
+    <section class="main-content">
+      <div class="new-releases">
+        <h1>New releases</h1>
+        <div>
+          <img src="images/bf4.jpg" alt="Battlefield 4">
+          <div class="sub-content">
+            <h3>Battlefield 4</h3>
+            <p class="price">399,-</p>
+            <p class="button add-to-cart">add to cart</p>
+          </div>
+        </div>
+        <div>
+          <img src="images/resident_evil_4.jpg" alt="Resident evil 4">
+          <div class="sub-content">
+            <h3>Resident Evil 4</h3>
+            <p class="price">349,-</p>
+            <p class="button add-to-cart"> add to cart</p>
+          </div>
+        </div>
+        <div>
+          <img src="images/minecraft.jpg" alt="Minecraft">
+          <div class="sub-content">
+            <h3>Minecraft</h3>
+            <p class="price">149,-</p>
+            <p class="button add-to-cart">add to cart</p>
+          </div>
+        </div>
+        <div>
+          <img src="images/gta5.jpg" alt="Grand theft auto 5">
+          <div class="sub-content">
+            <h3>GTA V</h3>
+            <p class="price">449,-</p>
+            <p class="button add-to-cart">add to cart</p>
+          </div>
+        </div>
       </div>
-      <div>
-        <img src="#" alt="Little big planet 2">
-        <p>130,-</p>
-        <p>add to cart</p>
+      <div class="news">
+        <h2>News</h2>
+        <img src="images/minecraft_news.png" alt="Minecraft new patch">
+        <img src="images/ps4_controller.jpg" alt="Article the best console">
       </div>
-      <div>
-        <img src="#" alt="FIFA 14">
-        <p>50,-</p>
-        <p>add to cart</p>
-      </div>
-      <div>
-        <img src="#" alt="Call of duty: black ops">
-        <p>150,-</p>
-        <p>add to cart</p>
+      <div class="used-games">
+        <h1>Buy used games</h1>
+        <div>
+          <img src="#" alt="Just dance">
+          <p>70,-</p>
+          <p>add to cart</p>
+        </div>
+        <div>
+          <img src="#" alt="Little big planet 2">
+          <p>130,-</p>
+          <p>add to cart</p>
+        </div>
+        <div>
+          <img src="#" alt="FIFA 14">
+          <p>50,-</p>
+          <p>add to cart</p>
+        </div>
+        <div>
+          <img src="#" alt="Call of duty: black ops">
+          <p>150,-</p>
+          <p>add to cart</p>
+        </div>
       </div>
     </section>
   </main>
@@ -92,7 +122,7 @@
       </div>
     </section>
     <section>
-      <p>Information</p>
+      <h3>Information</h3>
       <div>
         <p>About us</p>
         <p>FAQ</p>

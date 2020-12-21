@@ -1,0 +1,173 @@
+/*
+Colours:
+Black text: #040b17
+Background grey: #293238
+Dark blue: #11204a
+Green: #1de9b6
+Grey-ish: #DDDDDD
+White-ish; text: #eeedec
+*/
+
+/*big grid*/
+header {
+  grid-area: header;
+  background: #DDDDDD
+}
+
+nav {
+  grid-area: nav;
+  background: #eeedec;
+}
+
+main {
+  grid-area: main;
+  background: #293238
+}
+
+footer {
+  grid-area: footer;
+  background: #DDDDDD
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+  'header'
+  'nav'
+  'main'
+  'footer';
+  font-family: "Montserrat", "verdana", sans-serif;
+  font-size: 0.8em;
+  margin: 0px;
+  color: #eeedec;
+}
+
+header, footer {
+  color: #040b17;
+}
+
+a {
+  text-decoration: none;
+  color:#040b17;
+}
+
+/*header*/
+.top-header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 10px;
+  gap: 10px;
+}
+
+.header-content {
+  display: flex;
+  place-self: center end;
+}
+
+.header-content div {
+  margin: 0px 2em;
+}
+
+/*nav*/
+nav {
+  padding: 5px 0px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0px 20px;
+  list-style-type: none;
+}
+
+/*search bar*/
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin: 30px 0px;
+}
+
+.search-icon {
+  color: #eeedec;
+  margin-left: 15px;
+}
+
+.search-bar {
+  width: 300px;
+  height: 35px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 40px;
+  font-style: italic;
+  padding-left: 5px;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+.headers-main {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 35px;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr 1fr;
+  margin: 0px 70px;
+  justify-items: center;
+  gap: 70px;
+}
+
+.new-releases, .used-games {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0.1fr repeat(2, 1fr);
+  gap: 15px;
+  margin: 20px 0px;
+  text-align: center;
+}
+
+.news {
+  display: grid;
+  grid-template-rows: 0.1fr repeat(2, 1fr);
+  gap: 15px;
+  margin: 20px 0px;
+  text-align: center;
+}
+
+.new-releases h1, .news h2, .used-games h1 {
+  grid-column: 1 / -1;
+  margin: 0px;
+}
+
+.main-content img {
+  width: 100%;
+}
+
+.sub-content {
+  display: inline-block;
+}
+
+.sub-content p, h3 {
+  margin: 5px 0px;
+}
+
+.sub-content .price {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.button {
+  background-color: #1de9b6;
+  padding: 8px 15px;
+  border-radius: 5px;
+  color: #040b17;
+  text-transform: uppercase;
+  font-family: "Nunito Sans", "Montserrat", sans-serif;
+}
