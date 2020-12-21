@@ -37,7 +37,6 @@ body {
   'main'
   'footer';
   font-family: "Montserrat", "verdana", sans-serif;
-  font-size: 0.8em;
   margin: 0px;
   color: #eeedec;
 }
@@ -54,23 +53,28 @@ a {
 /*header*/
 .top-header {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr auto;
   margin: 10px;
   gap: 10px;
+  align-items: center;
 }
 
-.header-content {
-  display: flex;
-  place-self: center end;
+.header-content a{
+  margin-left: 15px;
 }
 
-.header-content div {
-  margin: 0px 2em;
+.logo {
+  width: 140px;
+}
+
+.cart-icon {
+  color: #11204a;
+  margin-right: 20px;
 }
 
 /*nav*/
 nav {
-  padding: 5px 0px;
+  padding: 2px 0px;
 }
 
 nav ul {
@@ -110,18 +114,15 @@ textarea:focus, input:focus{
   outline: none;
 }
 
-.headers-main {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 35px;
-}
-
 .main-content {
   display: grid;
   grid-template-columns: 1fr 0.8fr 1fr;
-  margin: 0px 70px;
   justify-items: center;
   gap: 70px;
+}
+
+.top-header, .main-content, .footer-content {
+  margin: 0px 100px;
 }
 
 .new-releases, .used-games {
@@ -158,9 +159,8 @@ textarea:focus, input:focus{
   margin: 5px 0px;
 }
 
-.sub-content .price {
+.sub-content {
   font-weight: bold;
-  font-size: 1.2em;
 }
 
 .button {
@@ -170,4 +170,24 @@ textarea:focus, input:focus{
   color: #040b17;
   text-transform: uppercase;
   font-family: "Nunito Sans", "Montserrat", sans-serif;
+}
+
+.sign-up, .log-in {
+  color: #1de9b6;
+  background-color: #11204a;
+}
+
+/*footer*/
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) auto;
+  margin-top: 10px;
+}
+
+.div-info h3{
+  margin: 0px;
+}
+.contact-info a, .div-info h3 {
+  font-size: 1.2em;
+  font-weight: bold;
 }
