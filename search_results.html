@@ -4,50 +4,129 @@
 <head>
   <meta name="description" content="Game Hub - buy and sell used games, or buy new">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://use.fontawesome.com/3e1948f670.js"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap" rel="stylesheet">
+  <link href="css/search_results.css" rel="stylesheet">
   <title>Game Hub | Home</title>
 </head>
 
 <body>
   <header>
-    <a href="index.html">
-      <img src="images/GameHub_logo.png" alt="Game Hub Logo">
-    </a>
+    <section class="top-header">
+      <div class="header-logo">
+        <a href="index.html"><img src="images/GameHub_logo.png" alt="Game Hub Logo" class="logo"></a>
+      </div>
+      <div class="header-content">
+        <a href="#" class="button sign-up">Sign up</a>
+        <a href="#" class="button log-in">Log in</a>
+        <a href="checkout.html" class="cart-icon"><i class="fa fa-shopping-cart fa-2x"></i></a>
+        <a href="profile.html" class="profile-icon"><i class="fa fa-user-circle fa-2x"></i></a>
+      </div>
+    </section>
     <nav>
-      <img src="#" alt="shopping cart">
-      <a href="profile.html">Profile</a>
+      <ul>
+        <li>All products</li>
+        <li>Used games</li>
+        <li>New Games</li>
+        <li>Sell games</li>
+        <li>News</li>
+      </ul>
     </nav>
-    <section>
-      <img src="#" alt="All categories">
-      <p>All categories</p>
-      <p>Action</p>
-      <p>Strategy</p>
-      <p>RPG</p>
-      <p>Puzzle</p>
-    </section>
   </header>
-  <main></main>
+  <main>
+    <div class="search">
+      <input type="text" name="search-bar" placeholder="Search" class="search-bar">
+      <a href="search_results.html" class="search-icon"><i class="fa fa-search fa-2x"></i></a>
+    </div>
+    <h1>4 results for "action"</h1>
+    <section>
+      <p>Filters |</p>
+      <div>
+        <!--checkbox here-->
+        <p>Used</p>
+      </div>
+      <div>
+        <!--checkbox here-->
+        <p>New</p>
+      </div>
+      <div>
+        <p>Price</p>
+        <!--little arrow down-->
+      </div>
+      <div>
+        <p>Category</p>
+        <!--little arrow down-->
+      </div>
+      <div>
+        <p>Platform</p>
+        <!--little arrow down-->
+      </div>
+      <p>Remove filters</p>
+      <div>
+        <p>Sort by</p>
+        <!--drop down menu-->
+      </div>
+    </section>
+    <section class="products">
+      <div>
+        <a href="product.html"><img src="images/cod_disk.jpg">></a>
+        <h2>CoD: Black Ops</h2>
+        <p>PS3</p>
+        <p class="price">150,-</p>
+      </div>
+      <div>
+        <img src="images/resident_evil_4.jpg">
+        <h2>Resident Evil 4</h2>
+        <p>PS4</p>
+        <p class="price">349,-</p>
+      </div>
+      <div>
+        <img src="images/gta5.jpg">
+        <h2>GTA V</h2>
+        <p>PS4</p>
+        <p class="price">449,-</p>
+      </div>
+      <div>
+        <img src="images/minecraft.jpg">
+        <h2>Minecraft</h2>
+        <p>PS4</p>
+        <p class="price">149,-</p>
+      </div>
+    </section>
+  </main>
   <footer>
-    <section>
-      <p>Contact us</p>
-      <div>
-        <p>contact@gamehub.com</p>
-        <p>chat | mon-fri: 10-14</p>
-        <p>www.facebook.com/gamehub</p>
+    <section class="footer-content">
+      <div class="contact-info">
+        <a href="contact.html">Contact us</a>
+        <div class="contact-method">
+          <p><i class="fa fa-envelope"></i></p>
+          <p>contact@gamehub.com</p>
+        </div>
+        <div class="contact-method">
+          <p><i class="fa fa-comments"></i></p>
+          <p>chat | mon-fri: 10-14</p>
+        </div>
+        <div class="contact-method">
+          <p><i class="fa fa-facebook"></i></p>
+          <p>www.facebook.com/gamehub</p>
+        </div>
+      </div>
+      <div class="information">
+        <h3>Information</h3>
+        <div>
+          <p>About us</p>
+          <p>FAQ</p>
+          <p>Jobs</p>
+          <p>Terms & Conditions</p>
+        </div>
+      </div>
+      <div class="logo-copyright">
+        <img src="images/GameHub_logo.png" alt="Gamehub logo" class="logo">
+        &copy; Game Hub
       </div>
     </section>
-    <section>
-      <p>Information</p>
-      <div>
-        <p>About us</p>
-        <p>FAQ</p>
-        <p>Jobs</p>
-        <p>Terms & Conditions</p>
-      </div>
-    </section>
-    <img src="images/GameHub_logo.png" alt="Gamehub logo">
-    &copy; Game Hub
   </footer>
 </body>
 

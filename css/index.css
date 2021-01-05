@@ -65,11 +65,12 @@ a {
 
 .logo {
   width: 140px;
+  margin-top: 5px;
 }
 
-.cart-icon {
+.cart-icon, .profile-icon {
   color: #11204a;
-  margin-right: 20px;
+  margin: 0px, 5px;
 }
 
 /*nav*/
@@ -114,6 +115,7 @@ textarea:focus, input:focus{
   outline: none;
 }
 
+/*main*/
 .main-content {
   display: grid;
   grid-template-columns: 1fr 0.8fr 1fr;
@@ -145,6 +147,8 @@ textarea:focus, input:focus{
 .new-releases h1, .news h2, .used-games h1 {
   grid-column: 1 / -1;
   margin: 0px;
+  border-bottom: 3px solid;
+  line-height: 10%;
 }
 
 .main-content img {
@@ -184,10 +188,37 @@ textarea:focus, input:focus{
   margin-top: 10px;
 }
 
-.div-info h3{
+.information h3{
   margin: 0px;
 }
-.contact-info a, .div-info h3 {
+.contact-info a, .information h3 {
   font-size: 1.2em;
   font-weight: bold;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-rows: 0.5fr, repeat(3, 1fr);
+}
+
+.contact-method {
+  display: flex;
+}
+
+.contact-method i{
+  margin-right: 5px;
+}
+
+.contact-method p{
+  margin: 5px 0px;
+}
+
+.information p{
+  line-height: 70%;
+}
+
+.logo-copyright {
+  display: grid;
+  grid-template-rows: 1fr, auto;
+  justify-items: center;
 }
