@@ -4,12 +4,12 @@
 <head>
   <meta name="description" content="Game Hub - buy and sell used games, or buy new">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://use.fontawesome.com/3e1948f670.js"></script>
+  <script src="https://kit.fontawesome.com/96bb08a331.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap" rel="stylesheet">
   <link href="css/search_results.css" rel="stylesheet">
-  <title>Game Hub | Home</title>
+  <title>Game Hub | Search: action</title>
 </head>
 
 <body>
@@ -21,8 +21,8 @@
       <div class="header-content">
         <a href="#" class="button sign-up">Sign up</a>
         <a href="#" class="button log-in">Log in</a>
-        <a href="checkout.html" class="cart-icon"><i class="fa fa-shopping-cart fa-2x"></i></a>
-        <a href="profile.html" class="profile-icon"><i class="fa fa-user-circle fa-2x"></i></a>
+        <a href="checkout.html" class="cart-icon"><i class="fas fa-shopping-cart fa-2x"></i></a>
+        <a href="profile.html" class="profile-icon"><i class="fas fa-user-circle fa-2x"></i></a>
       </div>
     </section>
     <nav>
@@ -36,63 +36,84 @@
     </nav>
   </header>
   <main>
-    <div class="search">
-      <input type="text" name="search-bar" placeholder="Search" class="search-bar">
-      <a href="search_results.html" class="search-icon"><i class="fa fa-search fa-2x"></i></a>
-    </div>
-    <h1>4 results for "action"</h1>
-    <section>
-      <p>Filters |</p>
-      <div>
-        <!--checkbox here-->
-        <p>Used</p>
+    <section class="main-content">
+      <div class="search">
+        <input type="text" name="search-bar" placeholder="Search" class="search-bar">
+        <a href="search_results.html" class="search-icon"><i class="fas fa-search fa-2x"></i></a>
       </div>
-      <div>
-        <!--checkbox here-->
-        <p>New</p>
+      <h1>4 results for "action"</h1>
+      <div class="filters">
+        <div>
+          <p class="filters_line">Filters</p>
+        </div>
+        <div>
+          <input type="checkbox" id="used" name="used" value="used">
+          <label for="used">Used</label>
+        </div>
+        <div>
+          <input type="checkbox" id="new" name="new" value="new">
+          <label for="new">New</label>
+        </div>
+        <div>
+          <p>Price</p>
+          <p><i class="fas fa-chevron-down"></i></p>
+        </div>
+        <div>
+          <p>Category</p>
+          <p><i class="fas fa-chevron-down"></i></p>
+        </div>
+        <div>
+          <p>Platform</p>
+          <p><i class="fas fa-chevron-down"></i></p>
+        </div>
+        <div>
+          <p class="remove-filters">Remove filters</p>
+        </div>
+        <div class="sort-by">
+          <label for="sort">Sort by</label>
+          <input list="options" id="sort" name="sort" />
+          <datalist id="options">
+            <option value="Most popular">
+            <option value="Price: low to high">
+            <option value="Price: high to low">
+            <option value="A to Z">
+            <option value="Z to A">
+          </datalist>
+        </div>
       </div>
-      <div>
-        <p>Price</p>
-        <!--little arrow down-->
-      </div>
-      <div>
-        <p>Category</p>
-        <!--little arrow down-->
-      </div>
-      <div>
-        <p>Platform</p>
-        <!--little arrow down-->
-      </div>
-      <p>Remove filters</p>
-      <div>
-        <p>Sort by</p>
-        <!--drop down menu-->
-      </div>
-    </section>
-    <section class="products">
-      <div>
-        <a href="product.html"><img src="images/cod_disk.jpg">></a>
-        <h2>CoD: Black Ops</h2>
-        <p>PS3</p>
-        <p class="price">150,-</p>
-      </div>
-      <div>
-        <img src="images/resident_evil_4.jpg">
-        <h2>Resident Evil 4</h2>
-        <p>PS4</p>
-        <p class="price">349,-</p>
-      </div>
-      <div>
-        <img src="images/gta5.jpg">
-        <h2>GTA V</h2>
-        <p>PS4</p>
-        <p class="price">449,-</p>
-      </div>
-      <div>
-        <img src="images/minecraft.jpg">
-        <h2>Minecraft</h2>
-        <p>PS4</p>
-        <p class="price">149,-</p>
+      <div class="products">
+        <div>
+          <a href="product.html"><img src="images/cod_disk.jpg"></a>
+          <div>
+            <h2>CoD: Black Ops</h2>
+            <p>PS3</p>
+            <p class="price">150,-</p>
+          </div>
+        </div>
+        <div>
+          <img src="images/resident_evil_4.jpg">
+          <div>
+            <h2>Resident Evil 4</h2>
+            <p>PS4</p>
+            <p class="price">349,-</p>
+          </div>
+        </div>
+        <div>
+          <img src="images/gta5.jpg">
+          <div>
+            <h2>GTA V</h2>
+            <p>PS4</p>
+            <p class="price">449,-</p>
+          </div>
+        </div>
+        <div>
+          <img src="images/minecraft.jpg">
+          <div>
+            <h2>Minecraft</h2>
+            <p>PS4</p>
+            <p class="price">149,-</p>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -101,15 +122,15 @@
       <div class="contact-info">
         <a href="contact.html">Contact us</a>
         <div class="contact-method">
-          <p><i class="fa fa-envelope"></i></p>
+          <p><i class="fas fa-envelope"></i></p>
           <p>contact@gamehub.com</p>
         </div>
         <div class="contact-method">
-          <p><i class="fa fa-comments"></i></p>
+          <p><i class="fas fa-comments"></i></p>
           <p>chat | mon-fri: 10-14</p>
         </div>
         <div class="contact-method">
-          <p><i class="fa fa-facebook"></i></p>
+          <p><i class="fab fa-facebook-square"></i></p>
           <p>www.facebook.com/gamehub</p>
         </div>
       </div>

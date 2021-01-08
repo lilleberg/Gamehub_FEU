@@ -41,11 +41,7 @@ body {
   color: #eeedec;
 }
 
-header, footer {
-  color: #040b17;
-}
-
-a {
+a, header, footer {
   text-decoration: none;
   color:#040b17;
 }
@@ -92,7 +88,7 @@ nav li {
 .search {
   display: flex;
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
   margin: 30px 0px;
 }
 
@@ -148,8 +144,9 @@ textarea:focus, input:focus{
   grid-column: 1 / -1;
   margin: 0px;
   border-bottom: 3px solid;
-  line-height: 10%;
+  padding-bottom: 5px;
 }
+
 
 .main-content img {
   width: 100%;
@@ -222,3 +219,5 @@ textarea:focus, input:focus{
   grid-template-rows: 1fr, auto;
   justify-items: center;
 }
+
+@media screen and
