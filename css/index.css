@@ -55,7 +55,7 @@ a, header, footer {
   align-items: center;
 }
 
-.header-content a{
+.header-content a {
   margin-left: 15px;
 }
 
@@ -66,7 +66,35 @@ a, header, footer {
 
 .cart-icon, .profile-icon {
   color: #11204a;
-  margin: 0px, 5px;
+}
+
+.button {
+  background-color: #1de9b6;
+  padding: 5px 12px;
+  border: 2px solid;
+  border-color: #1de9b6;
+  border-radius: 5px;
+  color: #040b17;
+  text-transform: uppercase;
+  font-family: "Nunito Sans", "Montserrat", sans-serif;
+  margin: 0px;
+}
+
+.sign-up, .log-in {
+  color: #1de9b6;
+  background-color: #11204a;
+  border-color: #11204a;
+}
+
+.button:hover {
+  background-color: #eeedec;
+  color: #11204a;
+}
+
+.sign-up:hover, .log-in:hover {
+  background-color: #eeedec;
+  color: #11204a;
+  border: 2px solid;
 }
 
 /*nav*/
@@ -82,6 +110,10 @@ nav ul {
 nav li {
   margin: 0px 20px;
   list-style-type: none;
+}
+
+.active {
+  font-weight: 600;
 }
 
 /*search bar*/
@@ -164,20 +196,6 @@ textarea:focus, input:focus{
   font-weight: bold;
 }
 
-.button {
-  background-color: #1de9b6;
-  padding: 8px 15px;
-  border-radius: 5px;
-  color: #040b17;
-  text-transform: uppercase;
-  font-family: "Nunito Sans", "Montserrat", sans-serif;
-}
-
-.sign-up, .log-in {
-  color: #1de9b6;
-  background-color: #11204a;
-}
-
 /*footer*/
 .footer-content {
   display: grid;
@@ -220,4 +238,4 @@ textarea:focus, input:focus{
   justify-items: center;
 }
 
-@media screen and
+@media only screen and (max-width: 1023px)

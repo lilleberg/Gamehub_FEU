@@ -92,7 +92,7 @@ nav li {
 .search {
   display: flex;
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
   margin: 30px 0px;
 }
 
@@ -107,7 +107,6 @@ nav li {
   font-size: 1.2em;
   border: none;
   border-radius: 40px;
-  font-style: italic;
   padding-left: 5px;
 }
 
@@ -115,18 +114,34 @@ textarea:focus, input:focus{
   outline: none;
 }
 
+/*Buttons*/
 .button {
   background-color: #1de9b6;
-  padding: 8px 15px;
+  padding: 5px 12px;
+  border: 2px solid;
+  border-color: #1de9b6;
   border-radius: 5px;
   color: #040b17;
   text-transform: uppercase;
   font-family: "Nunito Sans", "Montserrat", sans-serif;
+  margin: 0px;
 }
 
 .sign-up, .log-in {
   color: #1de9b6;
   background-color: #11204a;
+  border-color: #11204a;
+}
+
+.button:hover {
+  background-color: #eeedec;
+  color: #11204a;
+}
+
+.sign-up:hover, .log-in:hover {
+  background-color: #eeedec;
+  color: #11204a;
+  border: 2px solid;
 }
 
 .top-header, .main-content, .footer-content {
@@ -222,18 +237,22 @@ h1 {
 
 .products img {
   width: 100%;
-  justify-self: center;
+  margin-bottom: 5px;
 }
 
-.products h2 {
+.products h2, .products a {
   font-size: 1.2em;
-  margin: 5px 0px;
   font-weight: 400;
+  margin: 0px;
 }
 
 .products p {
-  margin: 2px 0px;
+  margin: 3px 0px;
   opacity: 80%;
+}
+
+.products a {
+  color: #eeedec
 }
 
 .products .price {
@@ -241,4 +260,9 @@ h1 {
   opacity: 100%;
   font-weight: 600;
   font-size: 1.2em;
+}
+
+.products_buy {
+  display: grid;
+  grid-template-columns: 1fr auto;
 }
