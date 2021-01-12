@@ -280,7 +280,7 @@ h1 {
   justify-items: center;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1300px) {
 
   .top-header, .main-content, .footer-content {
     margin: 0px 40px;
