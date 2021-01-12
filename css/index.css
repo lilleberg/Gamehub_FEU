@@ -10,10 +10,12 @@ White-ish; text: #eeedec
 
 @import "imports/typography.css";
 
-/*big grid*/
+/*
+  -- BIG GRID --
+*/
 header {
   grid-area: header;
-  background: #DDDDDD
+  background: #DDDDDD;
 }
 
 nav {
@@ -28,7 +30,7 @@ main {
 
 footer {
   grid-area: footer;
-  background: #DDDDDD
+  background: #DDDDDD;
 }
 
 body {
@@ -45,7 +47,9 @@ img {
   width: 100%;
 }
 
-/*header*/
+/*
+  -- HEADER --
+*/
 .top-header {
   display: grid;
   grid-template-columns: 1fr auto;
@@ -67,6 +71,9 @@ img {
   color: #11204a;
 }
 
+/*
+  -- BUTTONS --
+*/
 .button {
   background-color: #1de9b6;
   padding: 5px 12px;
@@ -93,7 +100,9 @@ img {
   border: 2px solid;
 }
 
-/*nav*/
+/*
+  -- NAV --
+*/
 .navbar {
   padding: 2px 0px;
 }
@@ -112,7 +121,9 @@ img {
   display: none;
 }
 
-/*search bar*/
+/*
+  -- SEARCH BAR --
+*/
 .search {
   display: flex;
   justify-content: center;
@@ -137,6 +148,9 @@ textarea:focus, input:focus{
   outline: none;
 }
 
+/*
+  -- MAIN CONTENT --
+*/
 .main-content {
   display: grid;
   grid-template-columns: 1fr 0.8fr 1fr;
@@ -184,7 +198,9 @@ h1, h2, h1 {
   font-weight: bold;
 }
 
-/*footer*/
+/*
+  -- FOOTER --
+*/
 .footer-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr) auto;
@@ -227,6 +243,9 @@ h1, h2, h1 {
   justify-items: center;
 }
 
+/*
+  -- Necessary kind of large screen scaling --
+*/
 @media only screen and (min-width: 900px) and (max-width: 1200px) {
 
   .main-content {
@@ -255,7 +274,9 @@ h1, h2, h1 {
   }
 }
 
-/*tablet-ish size*/
+/*
+  -- MEDIUM SCREEN --
+*/
 @media only screen and (min-width: 501px) and (max-width: 899px) {
 
   /*header / nav*/
@@ -340,7 +361,9 @@ h1, h2, h1 {
   }
 }
 
-/*small screen*/
+/*
+  -- SMALL SCREEN --
+*/
 @media only screen and (max-width: 500px) {
 
   footer .logo, .sign-up, 

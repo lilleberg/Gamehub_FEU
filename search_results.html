@@ -2,14 +2,14 @@
 <html>
 
 <head>
-  <meta name="description" content="Game Hub - buy and sell used games, or buy new">
+  <meta name="description" content="Game Hub - search results">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/96bb08a331.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap" rel="stylesheet">
   <link href="css/search_results.css" rel="stylesheet">
-  <title>Game Hub | Search: action</title>
+  <title>Game Hub | Search results</title>
 </head>
 
 <body>
@@ -19,20 +19,22 @@
         <a href="index.html"><img src="images/GameHub_logo.png" alt="Game Hub Logo" class="logo"></a>
       </div>
       <div class="header-content">
-        <a href="#" class="button sign-up">Sign up</a>
-        <a href="#" class="button log-in">Log in</a>
+        <a href="create_account.html" class="button sign-up">Sign up</a>
+        <a href="create_account.html" class="button log-in">Log in</a>
         <a href="checkout.html" class="cart-icon"><i class="fas fa-shopping-cart fa-2x"></i></a>
         <a href="profile.html" class="profile-icon"><i class="fas fa-user-circle fa-2x"></i></a>
       </div>
     </section>
-    <nav>
+    <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+    <input type="checkbox" id="hamburger-menu">
+    <nav class="navbar">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li>All products</li>
-        <li>Used games</li>
-        <li>New Games</li>
-        <li>Sell games</li>
-        <li>News</li>
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a>All products</a></li>
+        <li><a>Used games</a></li>
+        <li><a>New Games</a></li>
+        <li><a>Sell games</a></li>
+        <li><a>News</a></li>
       </ul>
     </nav>
   </header>
@@ -143,7 +145,7 @@
           <p>chat | mon-fri: 10-14</p>
         </div>
         <div class="contact-method">
-          <p><i class="fab fa-facebook-square"></i></p>
+          <p><i class="fab fa-facebook"></i></p>
           <p>www.facebook.com/gamehub</p>
         </div>
       </div>
@@ -158,7 +160,7 @@
       </div>
       <div class="logo-copyright">
         <img src="images/GameHub_logo.png" alt="Gamehub logo" class="logo">
-        &copy; Game Hub
+        &copy; Game Hub 2021
       </div>
     </section>
   </footer>
