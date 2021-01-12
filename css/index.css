@@ -8,6 +8,8 @@ Grey-ish: #DDDDDD
 White-ish; text: #eeedec
 */
 
+@import "imports/typography.css";
+
 /*big grid*/
 header {
   grid-area: header;
@@ -36,14 +38,11 @@ body {
   'nav'
   'main'
   'footer';
-  font-family: "Montserrat", "verdana", sans-serif;
   margin: 0px;
-  color: #eeedec;
 }
 
-a, header, footer {
-  text-decoration: none;
-  color:#040b17;
+img {
+  width: 100%;
 }
 
 /*header*/
@@ -74,9 +73,6 @@ a, header, footer {
   border: 2px solid;
   border-color: #1de9b6;
   border-radius: 5px;
-  color: #040b17;
-  text-transform: uppercase;
-  font-family: "Nunito Sans", "Montserrat", sans-serif;
   margin: 0px;
 }
 
@@ -98,22 +94,22 @@ a, header, footer {
 }
 
 /*nav*/
-nav {
+.navbar {
   padding: 2px 0px;
 }
 
-nav ul {
+.navbar ul {
   display: flex;
   justify-content: center;
 }
 
-nav li {
+.navbar li {
   margin: 0px 20px;
   list-style-type: none;
 }
 
-.active {
-  font-weight: 600;
+#hamburger-menu, .fa-bars {
+  display: none;
 }
 
 /*search bar*/
@@ -132,10 +128,8 @@ nav li {
 .search-bar {
   width: 300px;
   height: 35px;
-  font-size: 1.2em;
   border: none;
   border-radius: 40px;
-  font-style: italic;
   padding-left: 5px;
 }
 
@@ -143,7 +137,6 @@ textarea:focus, input:focus{
   outline: none;
 }
 
-/*main*/
 .main-content {
   display: grid;
   grid-template-columns: 1fr 0.8fr 1fr;
@@ -172,16 +165,11 @@ textarea:focus, input:focus{
   text-align: center;
 }
 
-.new-releases h1, .news h2, .used-games h1 {
+h1, h2, h1 {
   grid-column: 1 / -1;
   margin: 0px;
   border-bottom: 3px solid;
   padding-bottom: 5px;
-}
-
-
-.main-content img {
-  width: 100%;
 }
 
 .sub-content {
@@ -206,6 +194,7 @@ textarea:focus, input:focus{
 .information h3{
   margin: 0px;
 }
+
 .contact-info a, .information h3 {
   font-size: 1.2em;
   font-weight: bold;
@@ -238,4 +227,202 @@ textarea:focus, input:focus{
   justify-items: center;
 }
 
-@media only screen and (max-width: 1023px)
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+
+  .main-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1000px;
+    row-gap: 40px;
+  }
+
+  .new-releases, .used-games {
+    display: grid;
+    grid-template: 1fr / repeat(4, 1fr);
+    gap: 15px;
+  }
+
+  .news {
+    display: grid;
+    grid-template: 1fr / repeat(2, 1fr);
+    margin: 0px 3em;;
+    column-gap: 70px;
+    max-width: 800px;
+  }
+
+  .information {
+    justify-self: center;
+  }
+}
+
+/*tablet-ish size*/
+@media only screen and (min-width: 501px) and (max-width: 899px) {
+
+  /*header / nav*/
+  nav {
+    display: none;
+    padding: 0px;
+  }
+
+  #hamburger-menu:checked ~ nav {
+    display: block;
+  }
+
+  .navbar {
+    padding: 0px;
+  }
+
+  .navbar ul {
+    display: grid;
+    justify-content: left;
+    background-color: #eeedec;
+    padding: 5px 30px;
+    border: 2px solid;
+    border-color: #1de9b6;
+    margin: 0px;
+    position: absolute;
+    left: 40px;
+  }
+
+  .navbar li {
+    margin: 0px;
+    font-size: 0.9em;
+  }
+
+  .fa-bars {
+    display: block;
+    margin: 10px 0px 5px 40px;
+  }
+
+  .log-in, .cart-icon, .profile-icon {
+    font-size: 0.8em;
+  }
+
+  header .logo {
+    max-width: 110px;
+  }
+
+  /*main*/
+  .main-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+
+  .new-releases, .used-games {
+    grid-template-rows: 2fr;
+    gap: 20px;
+  }
+
+  .news {
+    display: grid;
+    grid-template: 1fr / repeat(2, 1fr);
+    margin: 0px 3em;
+    column-gap: 70px;
+  }
+
+  .top-header, .main-content {
+    margin: 0px 40px;
+  }
+
+  /*footer*/
+  .footer-content {
+    margin: 10px 40px;
+  }
+
+  footer .logo-copyright, .sign-up {
+    display: none;
+  }
+
+  .information {
+    justify-self: center;
+    text
+  }
+}
+
+/*small screen*/
+@media only screen and (max-width: 500px) {
+
+  footer .logo, .sign-up, 
+  .new-releases .game:nth-child(2),
+  .new-releases .game:nth-child(3),
+  .used-games .game:nth-child(2),
+  .used-games .game:nth-child(3) {
+    display: none;
+  }
+
+  /*header / nav*/
+  nav {
+    display: none;
+  }
+
+  #hamburger-menu:checked ~ nav {
+    display: block;
+  }
+
+  .fa-bars {
+    display: block;
+    margin: 10px 0px 5px 30px;
+  }
+
+  .navbar {
+    padding: 0px;
+  }
+
+  .navbar ul {
+    display: grid;
+    justify-content: left;
+    background-color: #eeedec;
+    padding: 5px 15px;
+    border: 2px solid;
+    border-color: #1de9b6;
+    margin: 0px;
+    position: absolute;
+    left: 30px;
+  }
+
+  .navbar li {
+    margin: 0px;
+    font-size: 0.9em;
+  }
+
+  .search-bar {
+    width: 170px;
+    height: 30px;
+  }
+
+  .header-logo .logo {
+    max-width: 100px;
+  }
+
+  .log-in, .cart-icon, .profile-icon {
+    font-size: 0.7em;
+  }
+
+  .main-content {
+    display: grid;
+    grid-template: 3fr / 1fr;
+    row-gap: 10px;;
+  }
+
+  .new-releases, .used-games {
+    display: grid;
+    grid-template: auto repeat(2, 1fr) / 1fr;
+  }
+
+  .top-header, .footer-content {
+    margin: 0px 20px;
+  }
+
+  .news {
+    display: none;
+  }
+
+  .footer-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    margin-top: 8px;
+    margin-left: 30px;
+  }
+}

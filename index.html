@@ -19,20 +19,22 @@
         <a href="index.html"><img src="images/GameHub_logo.png" alt="Game Hub Logo" class="logo"></a>
       </div>
       <div class="header-content">
-        <a href="#" class="button sign-up">Sign up</a>
-        <a href="#" class="button log-in">Log in</a>
+        <a href="create_account.html" class="button sign-up">Sign up</a>
+        <a href="create_account.html" class="button log-in">Log in</a>
         <a href="checkout.html" class="cart-icon"><i class="fas fa-shopping-cart fa-2x"></i></a>
         <a href="profile.html" class="profile-icon"><i class="fas fa-user-circle fa-2x"></i></a>
       </div>
     </section>
-    <nav>
+    <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+    <input type="checkbox" id="hamburger-menu">
+    <nav class="navbar">
       <ul>
         <li class="active"><a href="index.html">Home</a></li>
-        <li>All products</li>
-        <li>Used games</li>
-        <li>New Games</li>
-        <li>Sell games</li>
-        <li>News</li>
+        <li><a>All products</a></li>
+        <li><a>Used games</a></li>
+        <li><a>New Games</a></li>
+        <li><a>Sell games</a></li>
+        <li><a>News</a></li>
       </ul>
     </nav>
   </header>
@@ -44,7 +46,7 @@
     <section class="main-content">
       <div class="new-releases">
         <h1>New releases</h1>
-        <div>
+        <div class="game">
           <img src="images/bf4.jpg" alt="Battlefield 4">
           <div class="sub-content">
             <h3>Battlefield 4</h3>
@@ -52,7 +54,7 @@
             <p class="button add-to-cart">add to cart</p>
           </div>
         </div>
-        <div>
+        <div class="game">
           <img src="images/resident_evil_4.jpg" alt="Resident evil 4">
           <div class="sub-content">
             <h3>Resident Evil 4</h3>
@@ -60,7 +62,7 @@
             <p class="button add-to-cart"> add to cart</p>
           </div>
         </div>
-        <div>
+        <div class="game">
           <img src="images/minecraft.jpg" alt="Minecraft">
           <div class="sub-content">
             <h3>Minecraft</h3>
@@ -68,7 +70,7 @@
             <p class="button add-to-cart">add to cart</p>
           </div>
         </div>
-        <div>
+        <div class="game">
           <img src="images/gta5.jpg" alt="Grand theft auto 5">
           <div class="sub-content">
             <h3>GTA V</h3>
@@ -84,7 +86,7 @@
       </div>
       <div class="used-games">
         <h1>Buy used games</h1>
-        <div>
+        <div class="game">
           <img src="images/justdance.jpg" alt="Just dance">
           <div class="sub-content">
             <h3>Just Dance</h3>
@@ -92,7 +94,7 @@
             <p class="button add-to-cart">add to cart</p>
           </div>
         </div>
-        <div>
+        <div class="game">
           <img src="images/lbp2.jpg" alt="Little big planet 2">
           <div class="sub-content">
             <h3>LBP 2</h3>
@@ -100,7 +102,7 @@
             <p class="button add-to-cart">add to cart</p>
           </div>
         </div>
-        <div>
+        <div class="game">
           <img src="images/fifa14.jpg" alt="FIFA 14">
           <div class="sub-content">
             <h3>FIFA 14</h3>
@@ -108,10 +110,10 @@
             <p class="button add-to-cart">add to cart</p>
           </div>
         </div>
-        <div>
+        <div class="game">
           <a href="product.html"><img src="images/cod.jpg" alt="Call of duty: black ops"></a>
           <div class="sub-content">
-            <h3>CoD: Black Ops</h3>
+            <a href="product.html">CoD: Black Ops</a>
             <p class="price">150,-</p>
             <p class="button add-to-cart">add to cart</p>
           </div>
@@ -147,7 +149,7 @@
       </div>
       <div class="logo-copyright">
         <img src="images/GameHub_logo.png" alt="Gamehub logo" class="logo">
-        &copy; Game Hub
+        &copy; Game Hub 2021
       </div>
     </section>
   </footer>
