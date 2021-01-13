@@ -45,6 +45,7 @@ body {
 
 img {
   width: 100%;
+  margin-bottom: 5px;
 }
 
 a {
@@ -175,10 +176,6 @@ textarea:focus, input:focus{
   padding-right: 10px;
 }
 
-.sort-by {
-  justify-self: end;
-}
-
 .filters p, .sort-by input {
   margin-left: 5px;
 }
@@ -187,25 +184,24 @@ textarea:focus, input:focus{
   opacity: 70%;
 }
 
+#filters-box, .filter-label {
+  display: none;
+}
+
 /*
   -- MAIN, PRODUCTS --
 */
 h1 {
   border-bottom: 3px solid;
-  max-width: 35%;
+  max-width: 50%;
   padding-bottom: 5px;
 }
 
 .products {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  column-gap: 150px;
+  column-gap: 120px;
   margin: 40px 0px;
-}
-
-.products img {
-  width: 100%;
-  margin-bottom: 5px;
 }
 
 .products h2, .products a {
@@ -291,7 +287,7 @@ h1 {
   }
 
   .products {
-    column-gap: 50px;
+    column-gap: 60px;
   }
 
   .products a, .products h2 {
@@ -302,5 +298,225 @@ h1 {
     font-size: 0.8em;
   }
 
+  #filters-box, .filter-label {
+    display: none;
+  }
+}
 
+@media only screen and (min-width: 501px) and (max-width: 900px) {
+
+  /*header / nav*/
+  .log-in, .cart-icon, .profile-icon {
+    font-size: 0.8em;
+  }
+
+  header .logo {
+    max-width: 110px;
+  }
+
+  nav, .sign-up, .filters_line {
+    display: none;
+  }
+
+  #hamburger-menu:checked ~ nav {
+    display: block;
+  }
+
+  .navbar {
+    padding: 0px;
+  }
+
+  .navbar ul {
+    display: grid;
+    justify-content: left;
+    background-color: #eeedec;
+    padding: 5px 30px;
+    border: 2px solid;
+    border-color: #1de9b6;
+    margin: 0px;
+    position: absolute;
+    left: 40px;
+  }
+
+  .navbar li {
+    margin: 0px;
+    font-size: 0.9em;
+  }
+
+  .fa-bars {
+    display: block;
+    margin: 10px 0px 5px 40px;
+  }
+
+  h1 {
+    max-width: 70%;
+  }
+
+  /*filters*/
+  .filters {
+    display: none;
+    position: absolute;
+    background-color: #DDDDDD;
+    color: #293238;
+    border: 2px solid;
+    border-color: #1de9b6;
+    padding: 5px 10px;
+  }
+
+  #filters-box:checked ~ .filters, .filter-label {
+    display: block;
+  }
+
+  .filter-label {
+    border: 2px solid;
+    border-color: #1de9b6;
+    background-color: #dddddd;
+    color:#293238;
+    padding: 3px;
+    max-width: 7em;
+  }
+
+  #used, #new {
+    margin: 0px 5px 0px 0px;
+  }
+
+  .filters p, .filters div:nth-child(2),
+  .filters div:nth-child(3) {
+    margin: 5px 2px;
+  }
+
+  /*main*/
+  .products {
+    grid-template-columns: 1fr 1fr;
+    margin: 20px 50px;
+    row-gap: 2em;
+  }
+
+  /*footer*/
+  .footer-content {
+    margin: 10px 40px;
+  }
+
+  footer .logo-copyright, .sign-up {
+    display: none;
+  }
+
+  .information {
+    justify-self: center;
+    text
+  }
+}
+
+/*
+-- SMALL SCREEN --
+*/
+@media only screen and (max-width: 500px) {
+
+  footer .logo, .sign-up, 
+  .new-releases .game:nth-child(2),
+  .new-releases .game:nth-child(3),
+  .used-games .game:nth-child(2),
+  .used-games .game:nth-child(3) {
+    display: none;
+  }
+
+  /*header / nav*/
+  nav {
+    display: none;
+  }
+
+  #hamburger-menu:checked ~ nav {
+    display: block;
+  }
+
+  .fa-bars {
+    display: block;
+    margin: 10px 0px 5px 30px;
+  }
+
+  .navbar {
+    padding: 0px;
+  }
+
+  .navbar ul {
+    display: grid;
+    justify-content: left;
+    background-color: #eeedec;
+    padding: 5px 15px;
+    border: 2px solid;
+    border-color: #1de9b6;
+    margin: 0px;
+    position: absolute;
+    left: 30px;
+  }
+
+  .navbar li {
+    margin: 0px;
+    font-size: 0.9em;
+  }
+
+  .search-bar {
+    width: 170px;
+    height: 30px;
+  }
+
+  .header-logo .logo {
+    max-width: 100px;
+  }
+
+  .log-in, .cart-icon, .profile-icon {
+    font-size: 0.7em;
+  }
+
+  h1 {
+    max-width: 80%;
+  }
+
+  /*filters*/
+  .filters {
+    display: none;
+    position: absolute;
+    background-color: #DDDDDD;
+    color: #293238;
+    border: 2px solid;
+    border-color: #1de9b6;
+    padding: 5px 10px;
+  }
+
+  #filters-box:checked ~ .filters, .filter-label {
+    display: block;
+  }
+
+  .filter-label {
+    border: 2px solid;
+    border-color: #1de9b6;
+    background-color: #dddddd;
+    color:#293238;
+    padding: 3px;
+    max-width: 7em;
+  }
+
+  #used, #new {
+    margin: 0px 5px 0px 0px;
+  }
+
+  .filters p, .filters div:nth-child(2),
+  .filters div:nth-child(3) {
+    margin: 5px 2px;
+  }
+
+  .products {
+    grid-template-columns: 1fr;
+    margin: 20px 60px;
+    row-gap: 2em;
+  }
+
+  /*footer*/
+  .footer-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    margin-top: 8px;
+    margin-left: 30px;
+  }
 }
