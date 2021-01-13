@@ -23,7 +23,6 @@ a, header, footer {
   font-style: italic;
 }
 
-.sub-content a {
- color: #eeedec;
- font-size: 1.2em; 
+a {
+  text-decoration: none;
 }

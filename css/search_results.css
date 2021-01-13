@@ -48,11 +48,6 @@ img {
   margin-bottom: 5px;
 }
 
-a {
-  text-decoration: none;
-  color:#040b17;
-}
-
 /*
   -- HEADER --
 */
@@ -109,16 +104,16 @@ a {
 /*
   -- NAV --
 */
-nav {
+.navbar {
   padding: 2px 0px;
 }
 
-nav ul {
+.navbar ul {
   display: flex;
   justify-content: center;
 }
 
-nav li {
+.navbar li {
   margin: 0px 20px;
   list-style-type: none;
 }
@@ -193,7 +188,7 @@ textarea:focus, input:focus{
 */
 h1 {
   border-bottom: 3px solid;
-  max-width: 50%;
+  max-width: 30%;
   padding-bottom: 5px;
 }
 
@@ -305,49 +300,6 @@ h1 {
 
 @media only screen and (min-width: 501px) and (max-width: 900px) {
 
-  /*header / nav*/
-  .log-in, .cart-icon, .profile-icon {
-    font-size: 0.8em;
-  }
-
-  header .logo {
-    max-width: 110px;
-  }
-
-  nav, .sign-up, .filters_line {
-    display: none;
-  }
-
-  #hamburger-menu:checked ~ nav {
-    display: block;
-  }
-
-  .navbar {
-    padding: 0px;
-  }
-
-  .navbar ul {
-    display: grid;
-    justify-content: left;
-    background-color: #eeedec;
-    padding: 5px 30px;
-    border: 2px solid;
-    border-color: #1de9b6;
-    margin: 0px;
-    position: absolute;
-    left: 40px;
-  }
-
-  .navbar li {
-    margin: 0px;
-    font-size: 0.9em;
-  }
-
-  .fa-bars {
-    display: block;
-    margin: 10px 0px 5px 40px;
-  }
-
   h1 {
     max-width: 70%;
   }
@@ -377,7 +329,7 @@ h1 {
   }
 
   #used, #new {
-    margin: 0px 5px 0px 0px;
+    margin-right: 5px;
   }
 
   .filters p, .filters div:nth-child(2),
@@ -391,82 +343,12 @@ h1 {
     margin: 20px 50px;
     row-gap: 2em;
   }
-
-  /*footer*/
-  .footer-content {
-    margin: 10px 40px;
-  }
-
-  footer .logo-copyright, .sign-up {
-    display: none;
-  }
-
-  .information {
-    justify-self: center;
-    text
-  }
 }
 
 /*
 -- SMALL SCREEN --
 */
 @media only screen and (max-width: 500px) {
-
-  footer .logo, .sign-up, 
-  .new-releases .game:nth-child(2),
-  .new-releases .game:nth-child(3),
-  .used-games .game:nth-child(2),
-  .used-games .game:nth-child(3) {
-    display: none;
-  }
-
-  /*header / nav*/
-  nav {
-    display: none;
-  }
-
-  #hamburger-menu:checked ~ nav {
-    display: block;
-  }
-
-  .fa-bars {
-    display: block;
-    margin: 10px 0px 5px 30px;
-  }
-
-  .navbar {
-    padding: 0px;
-  }
-
-  .navbar ul {
-    display: grid;
-    justify-content: left;
-    background-color: #eeedec;
-    padding: 5px 15px;
-    border: 2px solid;
-    border-color: #1de9b6;
-    margin: 0px;
-    position: absolute;
-    left: 30px;
-  }
-
-  .navbar li {
-    margin: 0px;
-    font-size: 0.9em;
-  }
-
-  .search-bar {
-    width: 170px;
-    height: 30px;
-  }
-
-  .header-logo .logo {
-    max-width: 100px;
-  }
-
-  .log-in, .cart-icon, .profile-icon {
-    font-size: 0.7em;
-  }
 
   h1 {
     max-width: 80%;
@@ -505,18 +387,10 @@ h1 {
     margin: 5px 2px;
   }
 
+  /*main*/
   .products {
     grid-template-columns: 1fr;
     margin: 20px 60px;
     row-gap: 2em;
-  }
-
-  /*footer*/
-  .footer-content {
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 10px;
-    margin-top: 8px;
-    margin-left: 30px;
   }
 }

@@ -179,7 +179,7 @@ textarea:focus, input:focus{
   text-align: center;
 }
 
-h1, h2, h1 {
+h1, h2 {
   grid-column: 1 / -1;
   margin: 0px;
   border-bottom: 3px solid;
@@ -198,22 +198,27 @@ h1, h2, h1 {
   font-weight: bold;
 }
 
+.sub-content a {
+  color: #eeedec;
+  font-size: 1.1em;
+ }
+
+ .img-cod {
+   margin-bottom: 5px;
+ }
+
 /*
   -- FOOTER --
 */
 .footer-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr) auto;
-  margin-top: 10px;
-}
-
-.information h3{
-  margin: 0px;
 }
 
 .contact-info a, .information h3 {
   font-size: 1.2em;
   font-weight: bold;
+  margin-top: 10px;
 }
 
 .contact-info {
@@ -225,15 +230,15 @@ h1, h2, h1 {
   display: flex;
 }
 
-.contact-method i{
+.contact-method i {
   margin-right: 5px;
 }
 
-.contact-method p{
+.contact-method p {
   margin: 5px 0px;
 }
 
-.information p{
+.information  p{
   line-height: 70%;
 }
 
@@ -246,23 +251,23 @@ h1, h2, h1 {
 /*
   -- Necessary kind of large screen scaling --
 */
-@media only screen and (min-width: 901px) and (max-width: 1200px) {
+@media only screen and (min-width: 901px) and (max-width: 1300px) {
+
+  .top-header, .main-content, .footer-content {
+    margin: 0px 40px;
+  }
 
   .main-content {
-    display: grid;
     grid-template-columns: 1fr;
-    max-width: 1000px;
     row-gap: 40px;
   }
 
   .new-releases, .used-games {
-    display: grid;
     grid-template: 1fr / repeat(4, 1fr);
     gap: 15px;
   }
 
   .news {
-    display: grid;
     grid-template: 1fr / repeat(2, 1fr);
     margin: 0px 3em;;
     column-gap: 70px;
@@ -278,58 +283,7 @@ h1, h2, h1 {
   -- MEDIUM SCREEN --
 */
 @media only screen and (min-width: 501px) and (max-width: 900px) {
-
-  /*header / nav*/
-  nav {
-    display: none;
-    padding: 0px;
-  }
-
-  #hamburger-menu:checked ~ nav {
-    display: block;
-  }
-
-  .navbar {
-    padding: 0px;
-  }
-
-  .navbar ul {
-    display: grid;
-    justify-content: left;
-    background-color: #eeedec;
-    padding: 5px 30px;
-    border: 2px solid;
-    border-color: #1de9b6;
-    margin: 0px;
-    position: absolute;
-    left: 40px;
-  }
-
-  .navbar li {
-    margin: 0px;
-    font-size: 0.9em;
-  }
-
-  .fa-bars {
-    display: block;
-    margin: 10px 0px 5px 40px;
-  }
-
-  .log-in, .cart-icon, .profile-icon {
-    font-size: 0.8em;
-  }
-
-  header .logo {
-    max-width: 110px;
-  }
-
-  .top-header {
-    margin: 0px 40px;
-  }
-
-  /*main*/
   .main-content {
-    display: grid;
     grid-template-columns: 1fr;
     row-gap: 40px;
   }
@@ -340,27 +294,9 @@ h1, h2, h1 {
   }
 
   .news {
-    display: grid;
     grid-template: 1fr / repeat(2, 1fr);
     margin: 0px 3em;
     column-gap: 70px;
-  }
-
-  .main-content {
-    margin: 0px 60px;
-  }
-
-  /*footer*/
-  .footer-content {
-    margin: 10px 40px;
-  }
-
-  footer .logo-copyright, .sign-up {
-    display: none;
-  }
-
-  .information {
-    justify-self: center;
   }
 }
 
@@ -368,89 +304,24 @@ h1, h2, h1 {
   -- SMALL SCREEN --
 */
 @media only screen and (max-width: 500px) {
-
-  footer .logo, .sign-up, 
+ 
   .new-releases .game:nth-child(2),
   .new-releases .game:nth-child(3),
-  .used-games .game:nth-child(2),
-  .used-games .game:nth-child(3) {
+  .used-games .game:nth-child(3),
+  .used-games .game:nth-child(4) {
     display: none;
   }
 
-  /*header / nav*/
-  nav {
-    display: none;
-  }
-
-  #hamburger-menu:checked ~ nav {
-    display: block;
-  }
-
-  .fa-bars {
-    display: block;
-    margin: 10px 0px 5px 30px;
-  }
-
-  .navbar {
-    padding: 0px;
-  }
-
-  .navbar ul {
-    display: grid;
-    justify-content: left;
-    background-color: #eeedec;
-    padding: 5px 15px;
-    border: 2px solid;
-    border-color: #1de9b6;
-    margin: 0px;
-    position: absolute;
-    left: 30px;
-  }
-
-  .navbar li {
-    margin: 0px;
-    font-size: 0.9em;
-  }
-
-  .search-bar {
-    width: 170px;
-    height: 30px;
-  }
-
-  .header-logo .logo {
-    max-width: 100px;
-  }
-
-  .log-in, .cart-icon, .profile-icon {
-    font-size: 0.7em;
-  }
-
-  /*main*/
   .main-content {
-    display: grid;
     grid-template: 3fr / 1fr;
     row-gap: 10px;;
   }
 
   .new-releases, .used-games {
-    display: grid;
     grid-template: auto repeat(2, 1fr) / 1fr;
-  }
-
-  .top-header, .footer-content {
-    margin: 0px 20px;
   }
 
   .news {
     display: none;
-  }
-
-  /*footer*/
-  .footer-content {
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 10px;
-    margin-top: 8px;
-    margin-left: 30px;
   }
 }
