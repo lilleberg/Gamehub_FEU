@@ -44,10 +44,6 @@ body {
   margin: 0px;
 }
 
-img {
-  width: 100%;
-}
-
 /*
   -- SEARCH BAR --
 */
@@ -109,6 +105,10 @@ h1, h2 {
   padding-bottom: 5px;
 }
 
+.img-cod {
+  margin-bottom: 5px;
+}
+
 .sub-content {
   display: inline-block;
 }
@@ -123,11 +123,11 @@ h1, h2 {
 
 .sub-content a {
   color: #eeedec;
-  font-size: 1.1em;
+  font-size: 1.2em;
  }
 
- .img-cod {
-   margin-bottom: 5px;
+ .add-to-cart {
+   max-width: 108.133px;
  }
 
 /*
@@ -158,6 +158,10 @@ h1, h2 {
 
   .information {
     justify-self: center;
+  }
+
+  .footer-content {
+    margin-top: 10px;
   }
 }
 
