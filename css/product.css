@@ -9,6 +9,7 @@ White-ish; text: #eeedec
 */
 
 @import "imports/typography.css";
+@import "imports/desktop_global.css";
 
 /*
   -- BIG GRID --
@@ -48,80 +49,6 @@ img {
 }
 
 /*
-  -- HEADER --
-*/
-.top-header {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  margin: 10px;
-  gap: 10px;
-  align-items: center;
-}
-
-.header-content a {
-  margin-left: 15px;
-}
-
-.logo {
-  width: 140px;
-  margin-top: 5px;
-}
-
-.cart-icon, .profile-icon {
-  color: #11204a;
-}
-
-/*
-  -- BUTTONS --
-*/
-.button {
-  background-color: #1de9b6;
-  padding: 5px 12px;
-  border: 2px solid;
-  border-color: #1de9b6;
-  border-radius: 5px;
-  margin: 0px;
-}
-
-.sign-up, .log-in {
-  color: #1de9b6;
-  background-color: #11204a;
-  border-color: #11204a;
-}
-
-.button:hover {
-  background-color: #eeedec;
-  color: #11204a;
-}
-
-.sign-up:hover, .log-in:hover {
-  background-color: #eeedec;
-  color: #11204a;
-  border: 2px solid;
-}
-
-/*
-  -- NAV --
-*/
-nav {
-  padding: 2px 0px;
-}
-
-nav ul {
-  display: flex;
-  justify-content: center;
-}
-
-nav li {
-  margin: 0px 20px;
-  list-style-type: none;
-}
-
-#hamburger-menu, .fa-bars {
-  display: none;
-}
-
-/*
   -- SEARCH BAR --
 */
 .search {
@@ -148,10 +75,6 @@ textarea:focus, input:focus{
   outline: none;
 }
 
-.top-header, .main-content, .footer-content {
-  margin: 0px 100px;
-}
-
 /*
   -- MAIN CONTENT --
 */
@@ -163,7 +86,7 @@ textarea:focus, input:focus{
 }
 
 .page-title {
-  grid-column: span 2;
+  grid-column: 1 / -1;
   justify-self: start;
 }
 
@@ -187,7 +110,7 @@ h2, h3 {
 }
 
 .page-title p {
-  margin: 5px 0px 30px 0px;
+  margin: 5px 0px 10px 0px;
   opacity: 70%;
   font-size: 0.8em;
 }
@@ -269,51 +192,6 @@ h2 {
   text-decoration: underline;
 }
 
-/*
-  -- FOOTER --
-*/
-.footer-content {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr) auto;
-  margin-top: 10px;
-}
-
-.information h3, .about-seller h3, .star p {
-  margin: 0px;
-}
-
-.contact-info a, .information h3 {
-  font-size: 1.2em;
-  font-weight: bold;
-}
-
-.contact-info {
-  display: grid;
-  grid-template-rows: 0.5fr, repeat(3, 1fr);
-}
-
-.contact-method {
-  display: flex;
-}
-
-.contact-method i{
-  margin-right: 5px;
-}
-
-.contact-method p{
-  margin: 5px 0px;
-}
-
-.information p{
-  line-height: 70%;
-}
-
-.logo-copyright {
-  display: grid;
-  grid-template-rows: 1fr auto;
-  justify-items: center;
-}
-
 @media only screen and (min-width: 901px) and (max-width: 1200px) {
 
   .top-header, .main-content, .footer-content {
@@ -343,9 +221,13 @@ h2 {
   -- MEDIUM SCREEN --
 */
 @media only screen and (min-width: 501px) and (max-width: 900px) {
+  .next-img {
+    display: none;
+  }
+
   .main-content {
-    grid-template-columns: 1fr auto;
-    gap: 20px;
+    grid-template-columns: 1.5fr 1fr;
+    column-gap: 20px;
     justify-items: center;
   }
 
@@ -388,8 +270,57 @@ h2 {
   }
 
   .about-seller {
-    margin: 0px 0px 20px 0px;
+    margin: 20px 0px 20px 0px;
     justify-self: start;
+    border-left: none;
+  }
+}
+
+/*
+  -- SMALL SCREEN --
+*/
+@media only screen and (max-width: 500px) {
+  .next-img {
+    display: none;
+  }
+
+  .main-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    margin: 0px 60px;
+  }
+
+  h1 {
+    font-size: 1.3em;
+  }
+
+  .about-seller h3 {
+    font-size: 1.2em;
+  }
+
+  .price {
+    font-size: 1.2em;
+    margin: 0px 0px 10px 0px;
+  }
+
+  .payment-info {
+    margin: 0px;
+  }
+
+  .payment-info div, .about-seller {
+    margin: 30px 0px 0px 0px;
+  }
+
+  .payment-info div p:nth-child(1) {
+    font-size: 1em;
+  }
+
+  .button {
+    font-size: 0.9em;
+  }
+
+  .about-seller {
     border-left: none;
   }
 }

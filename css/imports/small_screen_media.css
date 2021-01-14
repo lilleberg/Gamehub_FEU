@@ -59,4 +59,12 @@
     margin-top: 8px;
     margin-left: 30px;
   }
+
+  .contact-info a, .information h3 {
+    font-size: 1.1em;
+  }
+
+  .information div p:first-child {
+    margin-top: 10px;
+  }
 }

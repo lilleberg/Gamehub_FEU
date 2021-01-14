@@ -9,6 +9,7 @@ White-ish; text: #eeedec
 */
 
 @import "imports/typography.css";
+@import "imports/desktop_global.css";
 
 /*
   -- BIG GRID --
@@ -48,80 +49,6 @@ img {
 }
 
 /*
-  -- HEADER --
-*/
-.top-header {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  margin: 10px;
-  gap: 10px;
-  align-items: center;
-}
-
-.header-content a {
-  margin-left: 15px;
-}
-
-.logo {
-  width: 140px;
-  margin-top: 5px;
-}
-
-.cart-icon, .profile-icon {
-  color: #11204a;
-}
-
-/*
-  -- BUTTONS --
-*/
-.button {
-  background-color: #1de9b6;
-  padding: 5px 12px;
-  border: 2px solid;
-  border-color: #1de9b6;
-  border-radius: 5px;
-  margin: 0px;
-}
-
-.sign-up, .log-in {
-  color: #1de9b6;
-  background-color: #11204a;
-  border-color: #11204a;
-}
-
-.button:hover {
-  background-color: #eeedec;
-  color: #11204a;
-}
-
-.sign-up:hover, .log-in:hover {
-  background-color: #eeedec;
-  color: #11204a;
-  border: 2px solid;
-}
-
-/*
-  -- NAV --
-*/
-.navbar {
-  padding: 2px 0px;
-}
-
-.navbar ul {
-  display: flex;
-  justify-content: center;
-}
-
-.navbar li {
-  margin: 0px 20px;
-  list-style-type: none;
-}
-
-#hamburger-menu, .fa-bars {
-  display: none;
-}
-
-/*
   -- SEARCH BAR --
 */
 .search {
@@ -156,10 +83,6 @@ textarea:focus, input:focus{
   grid-template-columns: 1fr 0.8fr 1fr;
   justify-items: center;
   gap: 70px;
-}
-
-.top-header, .main-content, .footer-content {
-  margin: 0px 100px;
 }
 
 .new-releases, .used-games {
@@ -206,47 +129,6 @@ h1, h2 {
  .img-cod {
    margin-bottom: 5px;
  }
-
-/*
-  -- FOOTER --
-*/
-.footer-content {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr) auto;
-}
-
-.contact-info a, .information h3 {
-  font-size: 1.2em;
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-.contact-info {
-  display: grid;
-  grid-template-rows: 0.5fr, repeat(3, 1fr);
-}
-
-.contact-method {
-  display: flex;
-}
-
-.contact-method i {
-  margin-right: 5px;
-}
-
-.contact-method p {
-  margin: 5px 0px;
-}
-
-.information  p{
-  line-height: 70%;
-}
-
-.logo-copyright {
-  display: grid;
-  grid-template-rows: 1fr, auto;
-  justify-items: center;
-}
 
 /*
   -- Necessary kind of large screen scaling --
@@ -314,7 +196,7 @@ h1, h2 {
 
   .main-content {
     grid-template: 3fr / 1fr;
-    row-gap: 10px;;
+    row-gap: 10px;
   }
 
   .new-releases, .used-games {
