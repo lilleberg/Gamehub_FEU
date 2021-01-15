@@ -213,4 +213,8 @@ h1, h2 {
   .news {
     display: none;
   }
+
+  .button {
+    max-width: 110px;
+  }
 }
