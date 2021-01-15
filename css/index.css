@@ -132,7 +132,7 @@ h1, h2 {
  }
 
 /*
-  -- Necessary kind of large screen scaling --
+  -- MEDIUM/LARGE SCREEN --
 */
 @media only screen and (min-width: 901px) and (max-width: 1300px) {
 
