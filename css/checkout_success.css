@@ -164,7 +164,6 @@ h2 {
     grid-template: auto / auto 1fr;
     gap: 30px;
     justify-self: center;
-    
   }
 
   .info-line, .game {

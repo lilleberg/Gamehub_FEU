@@ -1,0 +1,49 @@
+/*
+Colours:
+Black text: #040b17
+Background grey: #293238
+Dark blue: #11204a
+Green: #1de9b6
+Grey-ish: #dddddd
+White-ish; text: #eeedec
+*/
+
+@import "imports/typography.css";
+@import "imports/desktop_global.css";
+
+/*
+  -- BIG GRID --
+*/
+header {
+  grid-area: header;
+  background: #DDDDDD;
+}
+
+nav {
+  grid-area: nav;
+  background: #eeedec;
+}
+
+main {
+  grid-area: main;
+  background: #293238
+}
+
+footer {
+  grid-area: footer;
+  background: #DDDDDD;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+  'header'
+  'nav'
+  'main'
+  'footer';
+  margin: 0px;
+}
+
+/*
+  -- MAIN --
+*/
