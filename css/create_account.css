@@ -106,7 +106,7 @@ span {
 }
 
 /*https://www.html5canvastutorials.com/blog/2012/06/custom-form-radio-checkbox/*/
-#checkbox {
+#checkbox1, #checkbox2, #checkbox3 {
   appearance: none;
   background-color: var(--white);
   border: 2px solid var(--green);
@@ -116,7 +116,9 @@ span {
   position: relative;
 }
 
-#checkbox:checked:after {
+#checkbox1:checked:after,
+#checkbox2:checked:after,
+#checkbox3:checked:after {
   content: "\2714";
   font-size: 14px;
   position: absolute;
