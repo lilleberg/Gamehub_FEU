@@ -79,6 +79,7 @@ textarea:focus, input:focus{
   grid-template-columns: 1fr 0.8fr 1fr;
   justify-items: center;
   gap: 70px;
+  margin: 50px;
 }
 
 .new-releases, .used-games {

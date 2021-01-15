@@ -3,18 +3,17 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Game Hub - buy and sell used games, or buy new">
+  <meta name="description" content="Game Hub - Checkout">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/96bb08a331.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap"
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap" rel="stylesheet">
-  <link href="css/index.css" rel="stylesheet">
+  <link href="css/checkout.css" rel="stylesheet">
   <link href="css/imports/small_screen_media.css" rel="stylesheet">
   <link href="css/imports/med_screen_media.css" rel="stylesheet">
-  <title>Game Hub | Home</title>
+  <title>Game Hub | Checkout</title>
 </head>
 
 <body>
@@ -34,7 +33,7 @@
     <input type="checkbox" id="hamburger-menu">
     <nav class="navbar">
       <ul>
-        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a>All products</a></li>
         <li><a>Used games</a></li>
         <li><a>New Games</a></li>
@@ -44,7 +43,60 @@
     </nav>
   </header>
   <main>
-
+    <section class="main-content">
+      <div class="main-left">
+        <div class="cont-shop">
+          <a href="index.html"><i class="fas fa-chevron-left"></i></a>
+          <a href="index.html">Continue shopping</a>
+        </div>
+        <div class="page-title">
+          <h1>Checkout</h1>
+          <p>Empty basket</p>
+        </div>
+        <div class="item-price-line">
+          <p>Items</p>
+          <p>Price</p>
+          <p>Remove</p>
+        </div>
+        <div class="product">
+          <img src="images/cod.jpg" alt="Product image of Call of duty">
+          <div>
+            <a href="product.html">Call of Duty: Black Ops</a>
+            <p class="tags">Action, FPS, multiplayer, PS3</p>
+          </div>
+          <div class="price-remove">
+            <p>150,-</p>
+            <p><i class="fas fa-times-circle"></i></p>
+          </div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="payment-total">
+          <h2>Total sum</h2>
+          <div class="price">
+            <h3>Price</h3>
+            <p>150,-</p>
+          </div>
+          <div class="delivery-cost">
+            <h3>Delivery cost</h3>
+            <p>29,-</p>
+          </div>
+          <div class="sum">
+            <h3>Total sum</h3>
+            <p>179,-</p>
+          </div>
+          <div class="pay-info">
+            <h3>Payment info</h3>
+            <p class="edit-pay-info"><i class="fas fa-pen"></i></p>
+          </div>
+          <div class="card-info">
+            <p>Visa *****1234</p>
+            <p>12/22</p>
+          </div>
+          <a href="checkout_success.html" class="button purchase">Purchase</a>
+        </div>
+      </div>
+    </section>
   </main>
   <footer>
     <section class="footer-content">

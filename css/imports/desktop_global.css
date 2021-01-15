@@ -1,3 +1,12 @@
+:root {
+  --black-text: #040b17;
+  --green: #1de9b6;
+  --white: #eeedec;
+  --dark-blue: #11204a;
+  --background-grey: #293238;
+  --light-grey: #dddddd;
+}
+
 img {
   width: 100%;
 }
@@ -23,7 +32,7 @@ img {
 }
 
 .cart-icon, .profile-icon {
-  color: #11204a;
+  color: var(--dark-blue);
 }
 
 .top-header, .main-content, .footer-content {
@@ -34,28 +43,29 @@ img {
   -- BUTTONS --
 */
 .button {
-  background-color: #1de9b6;
+  background-color: var(--green);
   padding: 5px 12px;
   border: 2px solid;
-  border-color: #1de9b6;
+  border-color: var(--green);
   border-radius: 5px;
   margin: 0px;
+  color: var(--black-text);
 }
 
 .sign-up, .log-in {
   color: #1de9b6;
-  background-color: #11204a;
-  border-color: #11204a;
+  background-color: var(--dark-blue);
+  border-color: var(--dark-blue);
 }
 
 .button:hover {
-  background-color: #eeedec;
-  color: #11204a;
+  background-color: var(--white);
+  color: var(--dark-blue);
 }
 
 .sign-up:hover, .log-in:hover {
-  background-color: #eeedec;
-  color: #11204a;
+  background-color: var(--white);
+  color: var(--dark-blue);
   border: 2px solid;
 }
 

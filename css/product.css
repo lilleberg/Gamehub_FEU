@@ -79,6 +79,7 @@ textarea:focus, input:focus{
   grid-template-columns: 1.2fr 1fr 1.2fr;
   justify-items: left;
   column-gap: 100px;
+  margin: 0px 50px;
 }
 
 .page-title {

@@ -17,21 +17,24 @@
     padding: 0px;
   }
 
+  .navbar ul, .navbar li {
+    margin: 0px;
+  }
+
   .navbar ul {
     display: grid;
     justify-content: left;
     background-color: #eeedec;
-    padding: 5px 15px;
+    padding: 5px 10px;
     border: 2px solid;
     border-color: #1de9b6;
-    margin: 0px;
     position: absolute;
     left: 30px;
   }
 
   .navbar li {
-    margin: 0px;
     font-size: 0.9em;
+    padding: 10px
   }
 
   .search-bar {
