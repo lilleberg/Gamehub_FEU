@@ -1,57 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta name="description" content="Game Hub - buy and sell used games, or buy new">
+  <meta charset="UTF-8">
+  <meta name="description" content="Game Hub - Join us, create an account!">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://use.fontawesome.com/3e1948f670.js"></script>
+  <script src="https://kit.fontawesome.com/96bb08a331.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap"
+    rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap" rel="stylesheet">
-  <link href="css/product.css" rel="stylesheet">
-  <title>Game Hub | Home</title>
+  <link href="css/create_account.css" rel="stylesheet">
+  <link href="css/imports/med_screen_media.css" rel="stylesheet">
+  <link href="css/imports/small_screen_media.css" rel="stylesheet">
+  <title>Game Hub | Create account</title>
 </head>
 
 <body>
   <header>
     <section class="top-header">
       <div class="header-logo">
-        <img src="images/GameHub_logo.png" alt="Game Hub Logo" class="logo">
+        <a href="index.html"><img src="images/GameHub_logo.png" alt="Game Hub Logo" class="logo"></a>
       </div>
       <div class="header-content">
-        <a href="#" class="cart-icon"><i class="fa fa-shopping-cart fa-2x"></i></a>
-        <a href="#" class="button sign-up">Sign up</a>
-        <a href="#" class="button log-in">Log in</a>
-        <a href="profile.html" class="profile-icon"><i class="fa fa-user-circle fa-2x"></i></a>
+        <a href="create_account.html" class="button sign-up">Sign up</a>
+        <a href="create_account.html" class="button log-in">Log in</a>
+        <a href="checkout.html" class="cart-icon"><i class="fas fa-shopping-cart fa-2x"></i></a>
+        <a href="profile.html" class="profile-icon"><i class="fas fa-user-circle fa-2x"></i></a>
       </div>
     </section>
-    <nav>
+    <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+    <input type="checkbox" id="hamburger-menu">
+    <nav class="navbar">
       <ul>
-        <li>All products</li>
-        <li>Used games</li>
-        <li>New Games</li>
-        <li>Sell games</li>
-        <li>News</li>
+        <li><a href="index.html">Home</a></li>
+        <li><a>All products</a></li>
+        <li><a>Used games</a></li>
+        <li><a>New Games</a></li>
+        <li><a>Sell games</a></li>
+        <li><a>News</a></li>
       </ul>
     </nav>
   </header>
-  <main>
 
+  <main>
+    <section class="main-content">
+      <h1>Sign up</h1>
+      <form method="POST">
+        <label for="full-name">Full name</label>
+        <input type="text" name="full-name" id="full-name">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username">
+        <div>
+          <label for="password">Password</label>
+          <p><i class="fas fa-question-circle"></i></p>
+        </div>
+        <input type="text" name="password" id="password">
+        <label for="email">E-mail</label>
+        <input type="text" name="email" id="email">
+      </form>
+      <div>
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox">I have read the <span class="t&a">Terms & Conditions</span></label>
+      </div>
+      <div>
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox">I want to buy games</label>
+      </div>
+      <div>
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox">I want to sell games</label>
+      </div>
+      <div>
+        <a href="profile.html" class="button">Sign up</a>
+        <p>or</p>
+        <p class="button fb">Sign in with Facebook</p>
+        <p class="button ggl">Sign in with Google</p>
+      </div>
+    </section>
   </main>
+
   <footer>
     <section class="footer-content">
       <div class="contact-info">
         <a href="contact.html">Contact us</a>
         <div class="contact-method">
-          <p><i class="fa fa-envelope"></i></p>
+          <p><i class="fas fa-envelope"></i></p>
           <p>contact@gamehub.com</p>
         </div>
         <div class="contact-method">
-          <p><i class="fa fa-comments"></i></p>
+          <p><i class="fas fa-comments"></i></p>
           <p>chat | mon-fri: 10-14</p>
         </div>
         <div class="contact-method">
-          <p><i class="fa fa-facebook"></i></p>
+          <p><i class="fab fa-facebook"></i></p>
           <p>www.facebook.com/gamehub</p>
         </div>
       </div>
@@ -66,10 +108,11 @@
       </div>
       <div class="logo-copyright">
         <img src="images/GameHub_logo.png" alt="Gamehub logo" class="logo">
-        &copy; Game Hub
+        &copy; Game Hub 2021
       </div>
     </section>
   </footer>
+
 </body>
 
 </html>
