@@ -104,7 +104,7 @@ img {
 }
 
 .contact-info a, .information h3 {
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-weight: bold;
 }
 
@@ -122,11 +122,11 @@ img {
 }
 
 .contact-method p {
-  margin: 5px 0px;
+  margin: 3px 0px;
 }
 
 .information p {
-  line-height: 70%;
+  margin: 1px 0px 0px 0px;
 }
 
 .logo-copyright {

@@ -59,8 +59,7 @@
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 10px;
-    margin-top: 8px;
-    margin-left: 30px;
+    margin: 10px 0px 10px 30px;
   }
 
   .contact-info a, .information h3 {
@@ -68,6 +67,6 @@
   }
 
   .information div p:first-child {
-    margin-top: 10px;
+    margin-top: 7px;
   }
 }
