@@ -47,3 +47,43 @@ body {
 /*
   -- MAIN --
 */
+.main-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  text-align: center;
+  margin: 20px 100px 50px 100px;
+}
+
+h1 {
+  grid-column: 1/-1;
+  justify-self: start;
+  margin-bottom: 50px;
+}
+
+.main-content .fas,
+.main-content .fab {
+  background-color: var(--light-grey);
+  color: var(--dark-blue);
+  border: 2px solid;
+  border-color: var(--green);
+  border-radius: 6px;;
+  padding: 20px;
+}
+
+.chat p, .email p, .facebook p {
+  margin: 0px;
+  line-height: 1.3em;
+}
+
+.chat p:last-child {
+  margin-top: 15px;
+  font-style: italic;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.email p:nth-child(4),
+.facebook p:nth-child(4) {
+  margin-bottom: 15px;
+}
