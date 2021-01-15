@@ -153,9 +153,10 @@ h2 {
 }
 
   .main-content {
-    margin: 20px 20px;
+    margin: 20px 10px;
     background: none;
     border: none;
+    padding: 0px;
   }
 
   .info {
