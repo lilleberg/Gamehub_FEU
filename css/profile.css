@@ -194,11 +194,7 @@ h2, .left h3, .left p, .left div:first-child {
   .orders {
     margin-top: 50px;
   }
-
-  .main-content > div {
-    
-  }
-
+  
   .middle .text p:first-of-type,
   .fav-text p:first-of-type {
     font-size: 1em;
