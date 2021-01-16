@@ -222,8 +222,12 @@ h3 {
   }
 
   .right-side {
-    max-width: 300px;
     margin: 0px;
+    justify-self: center;
+  }
+
+  .right-side h3 {
+    margin-right: 60px;
   }
 }
 
@@ -252,8 +256,11 @@ h3 {
   }
 
   .right-side {
-    margin: 0px 60px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin: 0px;
+    justify-self: center;
+  }
+
+  .right-side h3 {
+    margin-right: 60px;
   }
 }
