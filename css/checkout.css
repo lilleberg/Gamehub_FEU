@@ -202,6 +202,8 @@ h3 {
 
   .main-content {
     grid-template-columns: 1fr;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 
   .item-price-line {
